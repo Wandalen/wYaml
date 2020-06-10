@@ -9,7 +9,7 @@
   "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
   "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wYaml.git" },
   "bugs" : { "url" : "https://github.com/Wandalen/wYaml/issues" },
-  "dependencies" : { "wTools" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0", "wyaml" : "file:." },
+  "dependencies" : { "wTools" : "alpha" },
+  "devDependencies" : { "eslint" : "7.1.0", "wyaml" : "file:.", "wTesting" : "alpha" },
   "keywords" : [ "wTools" ]
 }
