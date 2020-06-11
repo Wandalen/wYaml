@@ -3,15 +3,14 @@
 about :
 
   name : 'wYaml'
-  description : '___'
-  version : '0.4.0'
+  description : 'Collection of tools to manipulate yaml files. Aggregates module YamlTools.'
+  version : '0.3.0'
   enabled : 1
   interpreters :
   - njs >= 8.0.0
   - chrome >= 60.0.0
   - firefox >= 60.0.0
   keywords :
-  - tools
   - wTools
   license : MIT
   author : 'Kostiantyn Wandalen <wanalen@01.school>'
@@ -27,7 +26,7 @@ path :
   repository : git+https:///github.com/Wandalen/wYaml.git
   origins :
    - git+https:///github.com/Wandalen/wYaml.git
-   - npm:///wYaml
+   - npm:///wyaml
   bugtracker : https:///github.com/Wandalen/wYaml/issues
 
 step :
