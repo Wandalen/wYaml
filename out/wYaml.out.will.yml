@@ -3,25 +3,26 @@ root:
   - wYaml.out
 consistency:
   ../.ex.will.yml: &ref_0
-    hash: 43e67b7f8f291e27e3884db402e08c52
-    size: 1642
+    hash: 1523ad27142de2f637a7d1877c5a0bab
+    size: 1703
   ../.im.will.yml: &ref_1
-    hash: 4bd2ad8e081461ac0a9600e6aa2abea9
-    size: 4662
+    hash: be910a955ab23eeccb44b3e0777c4dec
+    size: 4956
 module:
   wYaml.out:
     about:
       name: wYaml
       org: noorg
-      description: ___
+      description: >-
+        Collection of tools to manipulate yaml files. Aggregates module
+        YamlTools.
       enabled: 1
-      version: 0.4.0
+      version: 0.3.0
       interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
       keywords: &ref_3
-        - tools
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
@@ -64,7 +65,7 @@ module:
       origins:
         path:
           - 'git+https:///github.com/Wandalen/wYaml.git'
-          - 'npm:///wYaml'
+          - 'npm:///wyaml'
       bugtracker:
         path: 'https:///github.com/Wandalen/wYaml/issues'
       in:
@@ -106,7 +107,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/___
+        path: ../proto/dwtools/amid/l4/Yaml.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -116,13 +117,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Yaml.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Yaml.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -153,10 +154,18 @@ module:
           - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
           - ../proto/dwtools/amid
+          - ../proto/dwtools/amid/l4
+          - ../proto/dwtools/amid/l4/Yaml.s
+          - ../proto/dwtools/amid/l4.test
+          - ../proto/dwtools/amid/l4.test/Yaml.test.s
           - ../proto/dwtools/atop
     submodule:
       wTools:
         path: 'npm:///wTools'
+        autoExporting: 0
+        enabled: 0
+      wYamlTools:
+        path: 'npm:///wyamltools'
         autoExporting: 0
         enabled: 0
       eslint:
@@ -165,6 +174,18 @@ module:
         enabled: 0
         criterion:
           debug: 1
+      wYaml:
+        path: 'hd://..'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      wTesting:
+        path: 'npm:///wTesting'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -748,7 +769,7 @@ module:
           - 'build::npm'
     exported:
       proto.export:
-        version: 0.4.0
+        version: 0.3.0
         recursive: 0
         withIntegrated: 2
         tar: 0
@@ -766,9 +787,11 @@ module:
     about:
       name: wYaml
       org: noorg
-      description: ___
+      description: >-
+        Collection of tools to manipulate yaml files. Aggregates module
+        YamlTools.
       enabled: 1
-      version: 0.4.0
+      version: 0.3.0
       interpreters: *ref_2
       keywords: *ref_3
       license: MIT
@@ -809,7 +832,7 @@ module:
       origins:
         path:
           - 'git+https:///github.com/Wandalen/wYaml.git'
-          - 'npm:///wYaml'
+          - 'npm:///wyaml'
       bugtracker:
         path: 'https:///github.com/Wandalen/wYaml/issues'
       in:
@@ -851,7 +874,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/___
+        path: proto/dwtools/amid/l4/Yaml.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -861,13 +884,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Yaml.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Yaml.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -885,12 +908,28 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
+      wYamlTools:
+        path: 'npm:///wyamltools'
+        autoExporting: 0
+        enabled: 0
       eslint:
         path: 'npm:///eslint#7.1.0'
         autoExporting: 0
         enabled: 0
         criterion:
           debug: 1
+      wYaml:
+        path: 'hd://.'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      wTesting:
+        path: 'npm:///wTesting'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -1423,8 +1462,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 43e67b7f8f291e27e3884db402e08c52
-        size: 1642
+        hash: 1523ad27142de2f637a7d1877c5a0bab
+        size: 1703
       ../.im.will.yml:
-        hash: 4bd2ad8e081461ac0a9600e6aa2abea9
-        size: 4662
+        hash: be910a955ab23eeccb44b3e0777c4dec
+        size: 4956
