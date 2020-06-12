@@ -5,7 +5,7 @@
 
 /**
  * Collection of tools to manipulate yaml files. Aggregates module YamlTools.
- * @module Tools/base/Yaml
+ * @module Tools/mid/Yaml
 */
 
 if( typeof module !== 'undefined' && module !== null )
