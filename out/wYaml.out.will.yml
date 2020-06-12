@@ -2,13 +2,10 @@ format: outwillfile-2.0
 root:
   - wYaml.out
 consistency:
-  wYaml.out.will.yml: &ref_0
-    hash: b7314bdf00076ae342eac6e10f69030a
-    size: 37825
-  ../.ex.will.yml: &ref_1
-    hash: 1523ad27142de2f637a7d1877c5a0bab
-    size: 1703
-  ../.im.will.yml: &ref_2
+  ../.ex.will.yml: &ref_0
+    hash: 803800cdcc22736933b7cebde6e527b3
+    size: 1704
+  ../.im.will.yml: &ref_1
     hash: be910a955ab23eeccb44b3e0777c4dec
     size: 4956
 module:
@@ -21,18 +18,18 @@ module:
         YamlTools.
       enabled: 1
       version: 0.3.0
-      interpreters:
+      interpreters: &ref_2
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wyaml
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -696,24 +693,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -802,9 +781,8 @@ module:
           content: proto
           export: 1
     consistency:
-      wYaml.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wYaml
@@ -814,20 +792,13 @@ module:
         YamlTools.
       enabled: 1
       version: 0.3.0
-      interpreters:
-        - njs >= 10.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - wTools
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wyaml
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -1491,11 +1462,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 1523ad27142de2f637a7d1877c5a0bab
-        size: 1703
+        hash: 803800cdcc22736933b7cebde6e527b3
+        size: 1704
       ../.im.will.yml:
         hash: be910a955ab23eeccb44b3e0777c4dec
         size: 4956
-      wYaml.out.will.yml:
-        hash: b7314bdf00076ae342eac6e10f69030a
-        size: 37825
