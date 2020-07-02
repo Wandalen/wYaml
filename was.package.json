@@ -5,7 +5,7 @@
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
   "main" : "proto/dwtools/amid/l3/yaml/entry/Yaml.s",
-  "files" : [ "proto/dwtools/amid/l3/yaml/entry/Yaml.s", "proto/dwtools/Tools.s" ],
+  "files" : [ "proto/dwtools/amid", "proto/dwtools/Tools.s" ],
   "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
   "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wYaml.git" },
   "bugs" : { "url" : "https://github.com/Wandalen/wYaml/issues" },

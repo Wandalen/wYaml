@@ -7,7 +7,7 @@ if( typeof module !== 'undefined' && module !== null )
 {
   let _ = require( '../../../../../dwtools/Tools.s' );
 
-  _.include( 'wyamltools' );
+  _.include( 'wYamlTools' );
 }
 
 let _global = _global_;
