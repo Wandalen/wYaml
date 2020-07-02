@@ -5,11 +5,11 @@
 if( typeof module !== 'undefined' )
 {
 
-  let _ = require( '../../Tools.s' );
+  let _ = require( '../../../../dwtools/Tools.s' );
 
   _.include( 'wTesting' );
 
-  require( '../../amid/l4/Yaml.s' );
+  require( '../yaml/entry/Yaml.s' );
 
 }
 
@@ -36,7 +36,7 @@ function routinesOfYamlTools( test )
 var Self =
 {
 
-  name : 'Tools.mid.l4.yaml',
+  name : 'Tools.mid.l3.yaml',
   silencing : 1,
 
   tests :

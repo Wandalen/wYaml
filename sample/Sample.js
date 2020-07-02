@@ -16,7 +16,7 @@ var exp =
   'line' : '  in : .',
   'pre' : '  ',
 };
-debugger;
+
 var got = _.yaml.lineFind( src, 'in' );
 console.log( got.line );
 
