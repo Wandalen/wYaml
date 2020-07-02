@@ -1,18 +1,13 @@
-//#! /usr/bin/env node
-(function _Yaml_s_(){
+( function _Yaml_s_()
+{
 
 'use strict';
 
-/**
- * Collection of tools to manipulate yaml files. Aggregates module YamlTools.
- * @module Tools/base/Yaml
-*/
-
 if( typeof module !== 'undefined' && module !== null )
 {
-  let _ = require( '../../Tools.s' );
+  let _ = require( '../../../../../dwtools/Tools.s' );
 
-  _.include( 'wyamltools' );
+  _.include( 'wYamlTools' );
 }
 
 let _global = _global_;
