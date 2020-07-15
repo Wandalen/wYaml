@@ -6,7 +6,7 @@ Collection of tools to manipulate yaml files. Aggregates module YamlTools.
 ## Try out
 ```
 npm install
-node sample/Sample.js
+node sample/Sample.s
 ```
 
 ## To add
