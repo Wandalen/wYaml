@@ -6,7 +6,7 @@
   "license" : "MIT",
   "main" : "proto/wtools/amid/l3/yaml/entry/Yaml.s",
   "files" : [ "proto/wtools/amid", "proto/wtools/Tools.s" ],
-  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
   "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wYaml.git" },
   "bugs" : { "url" : "https://github.com/Wandalen/wYaml/issues" },
   "dependencies" : { "wTools" : "", "wyamltools" : "" },
