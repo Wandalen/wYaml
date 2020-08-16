@@ -1,1 +1,15 @@
-{"name":"wyaml","version":"0.2.24","description":"Collection of tools to manipulate yaml files. Aggregates module YamlTools.","author":"Kostiantyn Wandalen <wanalen@01.school>","license":"MIT","main":"proto/wtools/amid/l3/yaml/entry/Yaml.s","files":["proto/wtools/amid","proto/wtools/Tools.s"],"scripts":{"test":"wtest .run proto rapidity:-3","docgen":"wdocgen .build proto"},"repository":{"type":"git","url":"https://github.com/Wandalen/wYaml.git"},"bugs":{"url":"https://github.com/Wandalen/wYaml/issues"},"dependencies":{"wTools":"alpha","wyamltools":"alpha"},"devDependencies":{"eslint":"7.1.0","wyaml":"file:.","wTesting":"alpha"},"keywords":["wTools"]}
+{
+  "name" : "wyaml",
+  "version" : "0.2.25",
+  "description" : "Collection of tools to manipulate yaml files. Aggregates module YamlTools.",
+  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
+  "license" : "MIT",
+  "main" : "proto/wtools/amid/l3/yaml/entry/Yaml.s",
+  "files" : [ "proto/wtools/amid", "proto/wtools/Tools.s" ],
+  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
+  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wYaml.git" },
+  "bugs" : { "url" : "https://github.com/Wandalen/wYaml/issues" },
+  "dependencies" : { "wTools" : "alpha", "wyamltools" : "alpha" },
+  "devDependencies" : { "eslint" : "7.1.0", "wyaml" : "file:.", "wTesting" : "alpha" },
+  "keywords" : [ "wTools" ]
+}
