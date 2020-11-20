@@ -23,10 +23,10 @@ let _ = _global_.wTools;
 function routinesOfYamlTools( test )
 {
   test.case = 'routines _.yaml.*';
-  test.is( _.routineIs( _.yaml.lineFind ) );
-  test.is( _.routineIs( _.yaml.commentOut ) );
-  test.is( _.routineIs( _.yaml.configEdit ) );
-  test.is( _.routineIs( _.yaml.configFileEdit ) );
+  test.true( _.routineIs( _.yaml.lineFind ) );
+  test.true( _.routineIs( _.yaml.commentOut ) );
+  test.true( _.routineIs( _.yaml.configEdit ) );
+  test.true( _.routineIs( _.yaml.configFileEdit ) );
 }
 
 // --
