@@ -1,4 +1,5 @@
-( function _Yaml_test_s_() {
+( function _Yaml_test_s_()
+{
 
 'use strict';
 
