@@ -8,7 +8,7 @@ Collection of tools to manipulate yaml files. Aggregates module YamlTools.
 git clone https://github.com/Wandalen/wYaml
 cd wYaml
 npm install
-node sample/Sample.s
+node sample/trivial/Sample.s
 ```
 
 ## To add to your project
