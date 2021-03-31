@@ -5,11 +5,11 @@
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
   "main" : "proto/wtools/amid/l3/yaml/entry/Yaml.s",
-  "files" : [ "proto/wtools/amid", "proto/wtools/Tools.s" ],
+  "files" : [ "proto/wtools/amid", "proto/wtools/Tools.s", "proto/node_modules" ],
   "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
   "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wYaml.git" },
   "bugs" : { "url" : "https://github.com/Wandalen/wYaml/issues" },
   "dependencies" : { "wTools" : "", "wyamltools" : "" },
-  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0", "wyaml" : "file:." },
+  "devDependencies" : { "wTesting" : "", "eslint" : "7.1.0" },
   "keywords" : [ "wTools" ]
 }
