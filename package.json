@@ -1,13 +1,14 @@
 {
   "name": "wyaml",
-  "version": "0.2.69",
+  "version": "0.2.70",
   "description": "Collection of tools to manipulate yaml files. Aggregates module YamlTools.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "license": "MIT",
   "main": "proto/wtools/amid/l3/yaml/entry/Yaml.s",
   "files": [
     "proto/wtools/amid",
-    "proto/wtools/Tools.s"
+    "proto/wtools/Tools.s",
+    "proto/node_modules"
   ],
   "scripts": {
     "test": "wtest .run proto rapidity:-3",
@@ -26,8 +27,7 @@
   },
   "devDependencies": {
     "eslint": "7.1.0",
-    "wTesting": "delta",
-    "wyaml": "file:."
+    "wTesting": "delta"
   },
   "keywords": [
     "wTools"
