@@ -1,17 +1,15 @@
-( function _Yaml_test_s_()
+( function _Yaml_test_ss_()
 {
 
 'use strict';
 
 if( typeof module !== 'undefined' )
 {
-
   let _ = require( '../../../../wtools/Tools.s' );
 
   _.include( 'wTesting' );
 
-  require( '../yaml/entry/Yaml.s' );
-
+  require( '../../l3/yaml/entry/Yaml.s' );
 }
 
 const _global = _global_;
