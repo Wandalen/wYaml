@@ -5,7 +5,7 @@
 
 if( typeof module !== 'undefined' && module !== null )
 {
-  let _ = require( '../../../../../wtools/Tools.s' );
+  let _ = require( '../../../../../node_modules/Tools' );
 
   _.include( 'wYamlTools' );
 }
