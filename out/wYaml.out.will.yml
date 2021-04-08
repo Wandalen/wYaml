@@ -1513,6 +1513,4 @@ module:
       ../.im.will.yml:
         hash: 7057419e9868af7526490e4e378ea9e4
         size: 4965
-      wYaml.out.will.yml:
-        hash: 291f1c832c79323dfb69e6a00f8b6012
-        size: 38653
+      wYaml.out.will.yml: *ref_0
