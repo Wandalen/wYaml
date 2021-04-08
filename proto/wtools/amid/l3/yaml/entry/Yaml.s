@@ -10,7 +10,7 @@
 
 if( typeof module !== 'undefined' )
 {
-  let _ = require( '../include/Yaml.s' )
+  const _ = require( '../include/Yaml.s' )
   module[ 'exports' ] = _global_.wTools;
 }
 
