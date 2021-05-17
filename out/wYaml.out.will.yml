@@ -2,12 +2,9 @@ format: outwillfile-2.0
 root:
   - wYaml.out
 consistency:
-  ../.ex.will.yml: &ref_0
-    hash: 803800cdcc22736933b7cebde6e527b3
-    size: 1704
-  ../.im.will.yml: &ref_1
-    hash: 7057419e9868af7526490e4e378ea9e4
-    size: 4965
+  ../will.yml: &ref_0
+    hash: 9bd8c6d0b2e82464c6bfbc4a411897ed
+    size: 6426
 module:
   wYaml.out:
     about:
@@ -18,18 +15,18 @@ module:
         YamlTools.
       enabled: 1
       version: 0.3.0
-      interpreters: &ref_2
+      license: MIT
+      npm.name: wyaml
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: &ref_1
+        - wTools
+      contributors: &ref_2
+        - Kostiantyn Wandalen <wanalen@01.school>
+      interpreters: &ref_3
         - njs >= 10.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords: &ref_3
-        - wTools
-      license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: &ref_4
-        - Kostiantyn Wandalen <wanalen@01.school>
-      npm.name: wyaml
-      npm.scripts: &ref_5
+      npm.scripts: &ref_4
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -44,15 +41,11 @@ module:
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
-        path:
-          - ../.ex.will.yml
-          - ../.im.will.yml
+        path: ../will.yml
       module.peer.in:
         criterion:
           predefined: 1
@@ -176,7 +169,7 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
-      wYamlTools:
+      wyamltools:
         path: 'npm:///wyamltools'
         autoExporting: 0
         enabled: 0
@@ -185,7 +178,7 @@ module:
         autoExporting: 0
         enabled: 0
         criterion:
-          debug: 1
+          development: 1
       wYaml:
         path: 'hd://..'
         autoExporting: 0
@@ -793,8 +786,7 @@ module:
           content: proto
           export: 1
     consistency:
-      ../.ex.will.yml: *ref_0
-      ../.im.will.yml: *ref_1
+      ../will.yml: *ref_0
   ../:
     about:
       name: wYaml
@@ -804,26 +796,22 @@ module:
         YamlTools.
       enabled: 1
       version: 0.3.0
-      interpreters: *ref_2
-      keywords: *ref_3
       license: MIT
-      author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors: *ref_4
       npm.name: wyaml
-      npm.scripts: *ref_5
+      author: Kostiantyn Wandalen <wanalen@01.school>
+      keywords: *ref_1
+      contributors: *ref_2
+      interpreters: *ref_3
+      npm.scripts: *ref_4
     path:
       module.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.original.willfiles:
         criterion:
           predefined: 1
-        path:
-          - .ex.will.yml
-          - .im.will.yml
+        path: will.yml
       module.peer.willfiles:
         criterion:
           predefined: 1
@@ -925,7 +913,7 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
-      wYamlTools:
+      wyamltools:
         path: 'npm:///wyamltools'
         autoExporting: 0
         enabled: 0
@@ -934,7 +922,7 @@ module:
         autoExporting: 0
         enabled: 0
         criterion:
-          debug: 1
+          development: 1
       wYaml:
         path: 'hd://.'
         autoExporting: 0
@@ -1478,9 +1466,6 @@ module:
           - 'build::release'
           - 'build::npm'
     consistency:
-      ../.ex.will.yml:
-        hash: 803800cdcc22736933b7cebde6e527b3
-        size: 1704
-      ../.im.will.yml:
-        hash: 7057419e9868af7526490e4e378ea9e4
-        size: 4965
+      ../will.yml:
+        hash: 9bd8c6d0b2e82464c6bfbc4a411897ed
+        size: 6426
