@@ -3,8 +3,8 @@ root:
   - wYaml.out
 consistency:
   ../will.yml: &ref_0
-    hash: 9bd8c6d0b2e82464c6bfbc4a411897ed
-    size: 6426
+    hash: 8de3d9b0ab90744ecbc9f1185f3d6d27
+    size: 6285
 module:
   wYaml.out:
     about:
@@ -372,9 +372,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -710,12 +707,6 @@ module:
           - 'step::doc.export'
         criterion:
           content: doc
-          export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
           export: 1
       export:
         steps:
@@ -1065,9 +1056,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -1404,12 +1392,6 @@ module:
         criterion:
           content: doc
           export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
-          export: 1
       export:
         steps:
           - 'build::proto.export'
@@ -1467,5 +1449,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 9bd8c6d0b2e82464c6bfbc4a411897ed
-        size: 6426
+        hash: 8de3d9b0ab90744ecbc9f1185f3d6d27
+        size: 6285
