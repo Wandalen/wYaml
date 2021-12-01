@@ -2,7 +2,7 @@
   "name": "wyaml",
   "version": "0.2.115",
   "description": "Collection of tools to manipulate yaml files. Aggregates module YamlTools.",
-  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
   "license": "MIT",
   "main": "proto/node_modules/wyaml",
   "files": [
