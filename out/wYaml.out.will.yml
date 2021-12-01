@@ -3,8 +3,8 @@ root:
   - wYaml.out
 consistency:
   ../will.yml: &ref_0
-    hash: 8de3d9b0ab90744ecbc9f1185f3d6d27
-    size: 6285
+    hash: 264c68f4879660708996bc75809dc09b
+    size: 6293
 module:
   wYaml.out:
     about:
@@ -1449,5 +1449,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 8de3d9b0ab90744ecbc9f1185f3d6d27
-        size: 6285
+        hash: 264c68f4879660708996bc75809dc09b
+        size: 6293
