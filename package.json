@@ -1,6 +1,6 @@
 {
   "name": "wyaml",
-  "version": "0.2.117",
+  "version": "0.2.118",
   "description": "Collection of tools to manipulate yaml files. Aggregates module YamlTools.",
   "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
   "license": "MIT",
@@ -23,11 +23,11 @@
     "url": "https://github.com/Wandalen/wYaml/issues"
   },
   "dependencies": {
-    "wyamltools": "delta",
-    "wTools": "delta"
+    "wyamltools": "alpha",
+    "wTools": "alpha"
   },
   "devDependencies": {
-    "wTesting": "delta",
+    "wTesting": "alpha",
     "eslint": "7.32.0"
   },
   "keywords": [
