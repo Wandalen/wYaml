@@ -1,6 +1,6 @@
 {
   "name": "wyaml",
-  "version": "0.2.121",
+  "version": "0.2.122",
   "description": "Collection of tools to manipulate yaml files. Aggregates module YamlTools.",
   "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
   "license": "MIT",
